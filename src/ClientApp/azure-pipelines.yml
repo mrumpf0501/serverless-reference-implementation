@@ -62,7 +62,6 @@ stages:
     displayName: Deploy Fabrikam Drone Status app
     pool:
       vmImage: 'Ubuntu-16.04'
-    dependsOn: WebsiteBuild
     environment: 'fabrikamdronestatus-prod'
     strategy:
       runOnce:
