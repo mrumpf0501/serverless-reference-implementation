@@ -68,7 +68,7 @@ stages:
         deploy:
           steps:
           - download: current
-            artifact: WebApp
+            artifact: drop
           - script: |
               echo '##vso[task.setvariable variable=releaseVersion]'$(cat "$(Pipeline.Workspace)/drop/version.txt")
               echo '##vso[task.setvariable variable=releaseSemVer]'$(cat "$(Pipeline.Workspace)/drop/semver.txt")
